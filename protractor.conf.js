@@ -12,7 +12,7 @@ module.exports.config = {
 
   suites: {
     smoke: [
-      // './specs/authenticateExistingCustomer.spec.js',
+      './specs/authenticateExistingCustomer.spec.js',
       './specs/createNewCustomerAccount.spec.js'
     ],
     sanity: [
@@ -20,9 +20,9 @@ module.exports.config = {
       './specs/placeOrderAfterCreatingAnAccount.spec.js'
     ],
     regression: [
-      // './specs/newsletterSignup.spec.js',
-      // './specs/insertAddressIntoAddressBook.spec.js',
-      // './specs/saleCategory.spec.js',
+      './specs/newsletterSignup.spec.js',
+      './specs/insertAddressIntoAddressBook.spec.js',
+      './specs/saleCategory.spec.js',
       './specs/findTheMostExpensiveYarn.spec.js'
     ]
   },
