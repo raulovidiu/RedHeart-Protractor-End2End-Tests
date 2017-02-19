@@ -79,7 +79,7 @@ module.exports.config = {
   params: {
     baseUrl: 'http://172.18.4.44:9001/',
 
-    // Azure DEV Env:
+    // Azure Env:
     // http://azusrhapdv01.eastus.cloudapp.azure.com:9001/
 
     // Data to be used for Place Order scenarios
