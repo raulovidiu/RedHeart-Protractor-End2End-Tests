@@ -1,0 +1,27 @@
+{
+  "name": "red-heart-end-to-end-automated-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "protractor.conf.js",
+  "scripts": {
+    "setup": "npm install && node node_modules/protractor/bin/webdriver-manager update",
+    "start-selenium": "webdriver-manager start",
+    "test": "node node_modules/protractor/bin/protractor protractor.conf.js",
+    "test-smoke": "node node_modules/protractor/bin/protractor protractor.conf.js --suite=smoke",
+    "test-sanity": "node node_modules/protractor/bin/protractor protractor.conf.js --suite=sanity",
+    "test-regression": "node node_modules/protractor/bin/protractor protractor.conf.js --suite=regression"
+  },
+  "keywords": [
+    "Protractor", "Automation", "End-to-End", "Testing"
+  ],
+  "author": "Raul Huluban",
+  "license": "ISC",
+  "dependencies": {
+    "protractor": "^5.0.0"
+  },
+  "devDependencies": {
+    "jasmine-spec-reporter": "^2.7.0",
+    "protractor-jasmine2-html-reporter": "0.0.6",
+    "faker": "^3.1.0"
+  }
+}
