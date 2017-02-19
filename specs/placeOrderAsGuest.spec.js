@@ -26,7 +26,7 @@ describe('Place Order - Guest User Flow', () => {
 	it('Navigate to Homepage', () => {
 		homePage.visit();
 
-		expect(homePage.redHeartLogo.isDisplayed()).toBe(true);		
+		expect(homePage.redHeartLogo.isDisplayed()).toBe(true);
 	});
 
 
@@ -39,20 +39,20 @@ describe('Place Order - Guest User Flow', () => {
 
 	it('Access a Pattern Product', () => {
 		browser.executeScript('arguments[0].scrollIntoView()', patterns.firstPattern.getWebElement());
-		
+
 		patterns.firstPattern.click();
-		
+
 		expect(browser.getCurrentUrl()).toContain('free-patterns/irresistibly-hip-cowl');
 	});
 
 
 	it('Add a Pattern Product to Cart and Access Cart Page', () => {
 		browser.executeScript('arguments[0].scrollIntoView()', patterns.buyFirstPattern.getWebElement());
-		patterns.buyFirstPattern.click().then(function() {
-			protractor.Key.ESCAPE;	
+		patterns.buyFirstPattern.click().then(function () {
+			protractor.Key.ESCAPE;
 		});
 
-		homePage.cart.click().then(function() {
+		homePage.cart.click().then(function () {
 			return browser.getCurrentUrl();
 		});
 
@@ -61,7 +61,7 @@ describe('Place Order - Guest User Flow', () => {
 
 
 	it('Proceed to Checkout', () => {
-		proceedToCheckoutBtn.click().then(function() {
+		proceedToCheckoutBtn.click().then(function () {
 			browser.wait(EC.elementToBeClickable(guestEmail));
 		});
 
@@ -85,7 +85,7 @@ describe('Place Order - Guest User Flow', () => {
 		shippingPage.email.click().clear().sendKeys(faker.internet.email());
 		shippingPage.selectDelivery('INTL-BMP');
 		shippingPage.continueToBilling.click();
-		
+
 		browser.wait(EC.elementToBeClickable(billingPage.editShippingBtn));
 
 		expect(billingPage.editShippingBtn.isDisplayed()).toBe(true);
@@ -95,7 +95,7 @@ describe('Place Order - Guest User Flow', () => {
 	it('Continue to Payment Options Page', () => {
 		billingPage.continueToPayment.click();
 
-		expect(paymentPage.placeOrder.isPresent()).toBe(true);	
+		expect(paymentPage.placeOrder.isPresent()).toBe(true);
 	});
 
 
@@ -113,5 +113,5 @@ describe('Place Order - Guest User Flow', () => {
 
 		expect(browser.getCurrentUrl()).toContain('/checkout/orderConfirmation/');
 	});
-	
+
 });

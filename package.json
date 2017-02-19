@@ -12,7 +12,10 @@
     "test-regression": "node node_modules/protractor/bin/protractor protractor.conf.js --suite=regression"
   },
   "keywords": [
-    "Protractor", "Automation", "End-to-End", "Testing"
+    "Protractor",
+    "Automation",
+    "End-to-End",
+    "Testing"
   ],
   "author": "Raul Huluban",
   "license": "ISC",

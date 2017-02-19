@@ -1,6 +1,6 @@
 'use strict';
 
-const HomePage = function() {
+const HomePage = function () {
 	// Top Area Elements
 
 	this.redHeartLogo = element(by.css('#nav-wrap img[alt="Red Heart"]'));
@@ -15,7 +15,7 @@ const HomePage = function() {
 	// Mega Menu Elements
 	this.patternsMenu = element(by.css('a[href="/free-patterns"]'));
 	this.cart = element(by.css('a.btn.gray.miniCart'));
-	this.hoverOverShop = function() {
+	this.hoverOverShop = function () {
 		return browser.actions().mouseMove(element(by.css('span.top-heading.tablink'))).perform();
 	};
 	this.saleCategory = element(by.css('a[onmouseover="openMega(event, \'sale\')"]'));
@@ -28,7 +28,7 @@ const HomePage = function() {
 	this.newsletterInp = element(by.id('homeNewsLetterSignUpEmail'));
 
 	// Actions
-	this.visit = function() {
+	this.visit = function () {
 		return browser.get(browser.params.baseUrl);
 	};
 };

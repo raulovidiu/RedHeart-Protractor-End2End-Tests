@@ -1,6 +1,6 @@
 'use strict';
 
-const Patterns = function() {
+const Patterns = function () {
 	this.firstPattern = element.all(by.className('item')).first();
 	this.buyFirstPattern = element(by.id('addToCartButton'));
 	this.addToCartLayer = element(by.id('addToCartLayer'));

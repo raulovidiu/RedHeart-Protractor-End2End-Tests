@@ -18,7 +18,7 @@ describe('Search for the Most Popular Yarns and Find the Most Expensive Yarn', (
 
 
   it('Should Hover Over Shop and Select Yarn', () => {
-    homePage.hoverOverShop().then(function() {
+    homePage.hoverOverShop().then(function () {
       browser.wait(EC.elementToBeClickable(homePage.yarnCategory));
       homePage.yarnCategory.click();
     });

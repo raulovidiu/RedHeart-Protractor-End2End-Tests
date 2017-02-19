@@ -17,7 +17,7 @@ describe('Sale Category Has the Clearance Applied as a Filter', () => {
 
 
   it('Should Hover Over Shop and Select Sale', () => {
-    homePage.hoverOverShop().then(function() {
+    homePage.hoverOverShop().then(function () {
       browser.wait(EC.elementToBeClickable(homePage.saleCategory));
       homePage.saleCategory.click();
     });
@@ -29,7 +29,7 @@ describe('Sale Category Has the Clearance Applied as a Filter', () => {
 
 
   it('Should Remove the Clearance Filter', () => {
-    clearanceFilter.click().then(function() {
+    clearanceFilter.click().then(function () {
       browser.wait(EC.invisibilityOf(clearanceFilter));
     });
 

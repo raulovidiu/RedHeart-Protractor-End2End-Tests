@@ -11,13 +11,13 @@ describe('Create a New Customer Account', () => {
 	const EC = protractor.ExpectedConditions;
 	const pass = faker.internet.password() + 'C1';
 
-  let userData = {
-    fName: faker.name.firstName(),
-    lName: faker.name.lastName(),
-    email: faker.internet.email(),
-    password: pass,
-    password2: pass
-  };
+	let userData = {
+		fName: faker.name.firstName(),
+		lName: faker.name.lastName(),
+		email: faker.internet.email(),
+		password: pass,
+		password2: pass
+	};
 
 
 	it('Navigate to Homepage', () => {

@@ -1,12 +1,12 @@
 'use strict';
 
-const AddressBook = function() {
+const AddressBook = function () {
 	this.addresses = element(by.css('div.std_wrap.my_account > div > div.span-6 > div > div.item > ul > li.address > a'));
 	this.addNewAddress = element(by.css('a.btn.btn_lrg'));
 	this.saveUpdates = element(by.css('button.form.change_address_button.btn.btn_lrg'));
 
 	this.countryDropdown = element(by.id('address.country'));
-	this.selectCountry = function(value) {
+	this.selectCountry = function (value) {
 		this.countryDropdown.$('[value="' + value + '"]').click();
 	};
 
@@ -17,7 +17,7 @@ const AddressBook = function() {
 	this.city = element(by.id('address.townCity'));
 
 	this.stateDropdown = element(by.id('address.region'));
-	this.selectState = function(value) {
+	this.selectState = function (value) {
 		this.stateDropdown.$('[value="' + value + '"]').click();
 	};
 

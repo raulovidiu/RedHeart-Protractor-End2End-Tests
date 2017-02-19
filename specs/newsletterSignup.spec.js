@@ -37,7 +37,7 @@ describe('Newsletter Signup Flow', () => {
 		browser.executeScript('arguments[0].scrollIntoView()', newsletterSignUp.signUp.getWebElement());
 
 		newsletterSignUp.selectMonth('4');
-		newsletterSignUp.selectDay( Math.floor((Math.random() * 30) + 1) );
+		newsletterSignUp.selectDay(Math.floor((Math.random() * 30) + 1));
 		newsletterSignUp.signUp.click();
 
 		browser.wait(EC.elementToBeClickable(loginPage.firstName));
