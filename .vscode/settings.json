@@ -1,0 +1,11 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+  "editor.tabSize": 2,
+  "translate_tabs_to_spaces": true,
+  "window.zoomLevel": 0,
+  "editor.fontSize": 12,
+  "editor.cursorBlinking": "solid",
+  "editor.renderIndentGuides": true,
+  "extensions.autoUpdate": true,
+  "editor.formatOnSave": true
+}
